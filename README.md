@@ -17,7 +17,7 @@ A comprehensive Python CLI tool for automated security testing of LLM-based appl
 ### Installation
 
 ```bash
-git clone https://github.com/yourusername/llm-red-team-toolkit.git
+git clone https://github.com/bastiaan365/llm-red-team-toolkit.git
 cd llm-red-team-toolkit
 pip install -e .
 ```
@@ -229,7 +229,7 @@ Contributions are welcome! Please:
 ### Development Setup
 
 ```bash
-git clone https://github.com/yourusername/llm-red-team-toolkit.git
+git clone https://github.com/bastiaan365/llm-red-team-toolkit.git
 cd llm-red-team-toolkit
 pip install -e ".[dev]"
 pre-commit install
@@ -255,9 +255,9 @@ If you use this toolkit in your research, please cite:
 ```bibtex
 @software{llm_red_team_toolkit,
   title={LLM Red Team Toolkit: Automated Security Testing for LLM Applications},
-  author={Your Name},
+  author={Bastiaan Rusch},
   year={2026},
-  url={https://github.com/yourusername/llm-red-team-toolkit}
+  url={https://github.com/bastiaan365/llm-red-team-toolkit}
 }
 ```
 
