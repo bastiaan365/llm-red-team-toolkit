@@ -1,0 +1,52 @@
+name: "Basic Security Scan"
+description: "Comprehensive test of common LLM vulnerabilities"
+
+target:
+  backend: http
+  model: gpt-4-test
+  endpoint: http://localhost:8000/api/chat
+  timeout: 30
+  max_tokens: 1000
+
+attacks:
+  - name: direct_prompt_injection
+    payloads: 3
+    severity: critical
+
+  - name: indirect_prompt_injection
+    payloads: 2
+    severity: high
+
+  - name: roleplay_jailbreak
+    payloads: 3
+    severity: high
+
+  - name: dan_jailbreak
+    payloads: 2
+    severity: high
+
+  - name: token_smuggling
+    payloads: 2
+    severity: high
+
+  - name: hypothetical_jailbreak
+    payloads: 2
+    severity: high
+
+  - name: context_leakage
+    payloads: 2
+    severity: critical
+
+  - name: data_extraction
+    payloads: 2
+    severity: critical
+
+  - name: boundary_testing
+    payloads: 2
+    severity: medium
+
+options:
+  concurrency: 5
+  timeout: 30
+  rate_limit: 10
+  retry_count: 1
