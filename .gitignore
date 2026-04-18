@@ -133,3 +133,6 @@ dmypy.json
 report.json
 report.html
 *.html
+
+# Personal Claude Code overrides
+.claude/settings.local.json
